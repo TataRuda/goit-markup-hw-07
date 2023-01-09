@@ -1,0 +1,36 @@
+.catalog {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.catalog__item {
+  position: relative;
+}
+.catalog__text {
+  text-align: center;
+  font-size: $primaryFont;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  font-family: $mainFont-family;
+  &--overlay {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: $bg-catalogColor;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 224px;
+    padding-top: 27px;
+  }
+}

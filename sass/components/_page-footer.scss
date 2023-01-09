@@ -1,0 +1,108 @@
+.footer-container {
+  background-color: $bgdarkColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+}
+.contacts-footer__link {
+  font-weight: 400;
+  font-size: $primaryFont;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-contactsColor;
+  text-decoration: none;
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &--underline {
+    text-decoration-line: underline;
+  }
+  &:hover,
+  &:focus {
+    color: $primaryColor;
+  }
+}
+.contacts-footer {
+  list-style: none;
+  &--indent-top {
+    padding-left: 0px;
+    margin: 0px;
+    padding-top: 20px;
+  }
+}
+.contacts-footer__address {
+  font-style: normal;
+  font-size: $primaryFont;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $whiteColor;
+}
+.contacts-footer__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+.footer-row__column {
+  display: block;
+  &--indent_left {
+    margin-left: 70px;
+  }
+
+  & h5 {
+    font-weight: 700;
+    font-size: $primaryFont;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-top: 11px;
+    margin-bottom: 20px;
+  }
+  &--end {
+    margin-left: 78px;
+    padding-top: 11px;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+}
+.newsletter-form__title {
+  font-weight: 700;
+  font-size: $primaryFont;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-form__input {
+  display: inline;
+  padding: 14px 15px;
+  border-radius: 4px;
+  border: 1px solid $borderColor;
+  width: 358px;
+  max-width: 358px;
+  background-color: $bgdarkColor;
+  margin-top: 20px;
+  font-size: $secondaryFont;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: left;
+  outline: 0;
+  color: $whiteColor;
+  &::placeholder {
+    color: $whiteColor;
+    opacity: 0.6;
+  }
+  &:not(:placeholder-shown) {
+    border-color: $primaryColor;
+  }
+  &:focus-within {
+    border-color: $primaryColor;
+  }
+}
