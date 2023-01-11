@@ -17,23 +17,23 @@
   transform: translate(0, 0);
   visibility: visible;
   transition: visibility $modal-windowAnimation, opacity $modal-windowAnimation;
-}
-.modal-box {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform $modal-windowAnimation;
-  &--size_l {
-    width: 528px;
-    height: 581px;
-    padding-top: 8px;
-    padding-right: 8px;
-    background: $whiteColor;
-    box-shadow: $main-cardShadow;
-    border-radius: 4px;
+  &-box {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform $modal-windowAnimation;
+    &--size_l {
+      width: 528px;
+      height: 581px;
+      padding-top: 8px;
+      padding-right: 8px;
+      background: $whiteColor;
+      box-shadow: $main-cardShadow;
+      border-radius: 4px;
+    }
   }
 }
 .is-hidden .modal-box {

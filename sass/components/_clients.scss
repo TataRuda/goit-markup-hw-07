@@ -6,20 +6,20 @@
     gap: 30px;
     margin-top: 50px;
   }
-}
-.clients-list__item {
-  display: block;
-  text-decoration: none;
-  outline: none;
-  line-height: 0.7;
-  fill: $iconColor;
-  border: 1px solid $iconColor;
-  border-radius: 4px;
-  transition: border-color $baseAnimation, fill $baseAnimation;
-  &:hover,
-  &:focus {
-    fill: $primaryColor;
-    cursor: pointer;
-    border-color: $primaryColor;
+  &__item {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    line-height: 0.7;
+    fill: $iconColor;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+    transition: border-color $baseAnimation, fill $baseAnimation;
+    &:hover,
+    &:focus {
+      fill: $primaryColor;
+      cursor: pointer;
+      border-color: $primaryColor;
+    }
   }
 }

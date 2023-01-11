@@ -1,4 +1,5 @@
 @use "./utils/variables" as *;
+@import "./components/containers";
 @import "./components/logo";
 @import "./components/page-footer";
 @import "./components/page-header";
@@ -12,34 +13,3 @@
 @import "./components/portfolio";
 @import "./components/buttons";
 @import "./components/links-row";
-
-body {
-  font-family: $mainFont-family;
-  color: $secondaryColor;
-}
-img {
-  display: block;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  &__title {
-    font-weight: 700;
-    font-size: $sectiontitleFont;
-    line-height: 1.67;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-darkColor;
-    margin: 0px auto;
-    padding: 0;
-  }
-  &--bg-grey {
-    background-color: $bg-lightColor;
-  }
-}

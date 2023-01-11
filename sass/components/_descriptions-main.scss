@@ -1,20 +1,3 @@
-.descriptions-list__title {
-  font-weight: 700;
-  font-size: $primaryFont;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $text-darkColor;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.descriptions-list__text {
-  font-size: $primaryFont;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin: 0px;
-  padding: 0px;
-}
 .descriptions-list {
   list-style: none;
   display: flex;
@@ -24,12 +7,29 @@
   margin: 0px;
   justify-content: space-between;
   align-items: center;
-}
-.descriptions-list__item {
-  flex-basis: calc((100% - 90px) / 4);
-  padding: 0;
-}
-.descriptions-list__img {
-  border-radius: 4px;
-  margin-bottom: 30px;
+  &__title {
+    font-weight: 700;
+    font-size: $primaryFont;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-darkColor;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: $primaryFont;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    padding: 0px;
+  }
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+    padding: 0;
+  }
+  &__img {
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
